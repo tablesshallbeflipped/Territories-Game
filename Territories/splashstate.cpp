@@ -12,7 +12,7 @@ void SplashState::Init(WindowManager* w)
 { 
 	cout << "|-->SplashState::Init() Invoked" << endl;
 
-    ptr_splash_screen_ = RenderingEngine::LoadTexture(w->getRenderer(), "_resources\\splashScreen.png");
+    ptr_splash_screen_ = RenderingEngine::LoadTexture(w->getRenderer(), "_resources\\_images\\splashBackground.png");
 }
 
 // Cleans the object in preperation for safe descruction of object.
@@ -70,5 +70,5 @@ void SplashState::Render(WindowManager* w)
 // Draw title screen
 
 	//Draw the ptr_splash_screen_ image to the Scene2D object within RenderingEngine	
-	RenderingEngine::DrawTexture(w->getRenderer(), ptr_splash_screen_, 0, 0);
+	RenderingEngine::DrawTexture(w->getRenderer(), ptr_splash_screen_, 1, 0);
 }
