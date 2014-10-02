@@ -9,8 +9,12 @@ class MainMenuState : public GameState
 {   
 private:
     Button* new_game_btn_;
+
+	Button* options_game_btn_;
       
     Button* quit_game_btn_; 
+
+	Button* credits_game_btn_;
     
 public:
 	MainMenuState() {}
