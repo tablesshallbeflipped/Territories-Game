@@ -52,7 +52,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -69,7 +69,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="board.cpp" />
     <ClCompile Include="button.cpp" />
     <ClCompile Include="gameengine.cpp" />
     <ClCompile Include="gameplaystate.cpp" />
@@ -77,7 +76,6 @@
     <ClCompile Include="loadingstate.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainmenustate.cpp" />
-    <ClCompile Include="outputpanel.cpp" />
     <ClCompile Include="renderingengine.cpp" />
     <ClCompile Include="rendertarget.cpp" />
     <ClCompile Include="splashstate.cpp" />
@@ -85,7 +83,6 @@
     <ClCompile Include="window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="board.h" />
     <ClInclude Include="button.h" />
     <ClInclude Include="gameengine.h" />
     <ClInclude Include="gameplaystate.h" />
@@ -93,7 +90,6 @@
     <ClInclude Include="gamestatemanager.h" />
     <ClInclude Include="loadingstate.h" />
     <ClInclude Include="mainmenustate.h" />
-    <ClInclude Include="outputpanel.h" />
     <ClInclude Include="renderingengine.h" />
     <ClInclude Include="rendertarget.h" />
     <ClInclude Include="splashstate.h" />

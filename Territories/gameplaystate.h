@@ -3,8 +3,7 @@
 
 #include "GameState.h"
 #include "GameStateManager.h"
-#include "Board.h"
-#include "OutputPanel.h"
+
 #include "Button.h"
 
 enum PlayerType
@@ -21,10 +20,6 @@ private:
     Button* new_game_btn_;
          
     Button* exit_game_btn_; 
-
-    Board game_board_;
-
-    OutputPanel output_panel_;
 
     bool is_winner_;    
               
