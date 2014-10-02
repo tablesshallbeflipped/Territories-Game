@@ -3,9 +3,10 @@
 // Main Entry Point for application
 int main(int argc, char* argv[]) 
 {
-	GameEngine ticTacToe;
+	// Declare instance of GameEngine
+	GameEngine territories;
 
-	ticTacToe.Run();
+	territories.Run();
 
 	return 0;	
 }
