@@ -21,13 +21,13 @@ class SplashState : public GameState
 //======================================================//
 private:
 	// Pointer to splash screen texture 
-	SDL_Texture* ptr_splash_screen_;
+	SDL_Texture* ptr_screen_;
 
 //======================================================//
 //                      Behaviors                       //
 //======================================================// 	
 public:
-	SplashState() : ptr_splash_screen_(nullptr) {}
+	SplashState() : ptr_screen_(nullptr){}
 	~SplashState() {}
 
 	// Splash state initialization method

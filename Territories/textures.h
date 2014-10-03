@@ -25,9 +25,6 @@ using std::string;
 class Texture
 {
 private:
-	const int SCREEN_WIDTH = 800;
-	const int SCREEN_HEIGHT = 600;
-	const int TILE_SIZE = 40;
 	int alpha_; // range 0 -255
 	string name_; // optional OSI
 	SDL_Point rotation_point_; // Point (x,y) preform rotations
