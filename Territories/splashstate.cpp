@@ -12,7 +12,7 @@ void SplashState::Init(WindowManager* w)
 { 
 	cout << "|-->SplashState::Init() Invoked" << endl;
 
-    ptr_splash_screen_ = RenderingEngine::LoadTexture(w->getRenderer(), "_resources\\_images\\splashBackground.png");
+   // ptr_splash_screen_ = RenderingEngine::LoadTexture(w->getRenderer(), "_resources\\splashScreen.png");
 }
 
 // Cleans the object in preperation for safe descruction of object.
@@ -29,15 +29,17 @@ void SplashState::HandleEvents(SDL_Event* event)
 	switch(event->type) 
 	{
 		case SDL_MOUSEBUTTONDOWN: 
-		    if(event->button.button == SDL_BUTTON_LEFT || event->button.button == SDL_BUTTON_RIGHT) 
+		    if(event->button.button == SDL_BUTTON_LEFT || event->button.button == SDL_BUTTON_RIGHT ) 
 		    {
 		    	cout << " | Current State: SplashState" << endl;
 		    }
 		    break;
+
+
 		    
 		case SDL_KEYDOWN: 
 		    /* Change States when Escape is pressed */
-		    if ( event->key.keysym.sym == SDLK_RIGHT )
+		    if (event->key.keysym.sym == SDLK_RETURN )
 		    {
 		        GameStateManager::setCurrentState(GAMESTATE_LOADING);
 		        
@@ -54,7 +56,8 @@ void SplashState::Update(WindowManager* w) {}
 // drawn within this method is drawn to the RenderingEngine's scene_ property.
 void SplashState::Render(WindowManager* w) 
 {
-// Background Fill
+	// Background Fill
+	ptr_splash_screen_ = RenderingEngine::LoadTexture(w->getRenderer(), "_resources\\spalshBackground.jpg");
 
 	// Set the Renderer Color to desired value for drawing the background. 
 	SDL_SetRenderDrawColor(w->getRenderer(), 80, 20, 162, 255 );
@@ -70,5 +73,5 @@ void SplashState::Render(WindowManager* w)
 // Draw title screen
 
 	//Draw the ptr_splash_screen_ image to the Scene2D object within RenderingEngine	
-	RenderingEngine::DrawTexture(w->getRenderer(), ptr_splash_screen_, 1, 0);
+	RenderingEngine::DrawTexture(w->getRenderer(), ptr_splash_screen_, 0, 0, 600,800 );
 }

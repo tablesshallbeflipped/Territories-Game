@@ -79,6 +79,7 @@
     <ClCompile Include="renderingengine.cpp" />
     <ClCompile Include="rendertarget.cpp" />
     <ClCompile Include="splashstate.cpp" />
+    <ClCompile Include="textures.cpp" />
     <ClCompile Include="timer.cpp" />
     <ClCompile Include="window.cpp" />
   </ItemGroup>
@@ -93,6 +94,7 @@
     <ClInclude Include="renderingengine.h" />
     <ClInclude Include="rendertarget.h" />
     <ClInclude Include="splashstate.h" />
+    <ClInclude Include="textures.h" />
     <ClInclude Include="timer.h" />
     <ClInclude Include="window.h" />
   </ItemGroup>

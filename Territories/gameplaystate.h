@@ -8,21 +8,18 @@
 
 enum PlayerType
 {
-    PLAYER_TYPE_X = 0,
+   
 
-    PLAYER_TYPE_O
+   
 };
 
 class GameplayState : public GameState
 {
 private:
 
-    Button* new_game_btn_;
+	Button* game_menu_btn_;
          
-    Button* exit_game_btn_; 
 
-    bool is_winner_;    
-              
     PlayerType current_player_;              
 
     void OnLeftBtnDown(int mX, int mY);
@@ -31,8 +28,8 @@ private:
 
 public:
 
-    GameplayState() : new_game_btn_(nullptr), exit_game_btn_(nullptr),
-    is_winner_(false), current_player_(PLAYER_TYPE_X) {}
+	GameplayState() :  game_menu_btn_(nullptr),
+    current_player_() {}
 
 	virtual void Init(WindowManager* w);
 
