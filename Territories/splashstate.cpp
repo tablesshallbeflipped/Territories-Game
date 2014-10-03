@@ -11,10 +11,9 @@
 void SplashState::Init(WindowManager* w)
 { 
 	cout << "|-->SplashState::Init() Invoked" << endl;
-
-   // ptr_splash_screen_ = RenderingEngine::LoadTexture(w->getRenderer(), "_resources\\splashScreen.png");
+	
+  // ptr_splash_screen_ = RenderingEngine::LoadTexture(w->getRenderer(), "_resources\\splashScreen.png");
 }
-
 // Cleans the object in preperation for safe descruction of object.
 void SplashState::Clean()
 {

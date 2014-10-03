@@ -19,7 +19,6 @@ private:
 
 	Button* game_menu_btn_;
          
-
     PlayerType current_player_;              
 
     void OnLeftBtnDown(int mX, int mY);
